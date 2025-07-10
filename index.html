@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Problemas</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1, h2 { margin-bottom: 10px; }
+        .container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .column { width: 48%; margin-bottom: 20px; }
+        .options { display: flex; flex-wrap: wrap; gap: 10px; }
+        .options label {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .options input[type="radio"] { display: none; }
+        .options input[type="radio"]:checked + label {
+            background-color: #2196F3;
+            color: white;
+            border-color: #0d8ddb;
+        }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registro de Problemas</h1>
+
+    <form id="registroForm">
+        <div class="container">
+
+            <div class="column">
+                <h2>Equipamento</h2>
+                <div class="options">
+                    <input type="radio" id="CB-251" name="equipamento" value="CB-251"><label for="CB-251">CB-251</label>
+                    <input type="radio" id="CB-252" name="equipamento" value="CB-252"><label for="CB-252">CB-252</label>
+                    <input type="radio" id="CB-253" name="equipamento" value="CB-253"><label for="CB-253">CB-253</label>
+                    <input type="radio" id="CB-254" name="equipamento" value="CB-254"><label for="CB-254">CB-254</label>
+                    <input type="radio" id="CB-255" name="equipamento" value="CB-255"><label for="CB-255">CB-255</label>
+                    <input type="radio" id="CB-256" name="equipamento" value="CB-256"><label for="CB-256">CB-256</label>
+                    <input type="radio" id="CB-257" name="equipamento" value="CB-257"><label for="CB-257">CB-257</label>
+                    <input type="radio" id="CB-258" name="equipamento" value="CB-258"><label for="CB-258">CB-258</label>
+                    <input type="radio" id="CB-259" name="equipamento" value="CB-259"><label for="CB-259">CB-259</label>
+                    <input type="radio" id="CB-260" name="equipamento" value="CB-260"><label for="CB-260">CB-260</label>
+                    <input type="radio" id="CB-261" name="equipamento" value="CB-261"><label for="CB-261">CB-261</label>
+                    <input type="radio" id="CB-530" name="equipamento" value="CB-530"><label for="CB-530">CB-530</label>
+                    <input type="radio" id="CB-531" name="equipamento" value="CB-531"><label for="CB-531">CB-531</label>
+                    <input type="radio" id="CB-545" name="equipamento" value="CB-545"><label for="CB-545">CB-545</label>
+                    <input type="radio" id="CB-546" name="equipamento" value="CB-546"><label for="CB-546">CB-546</label>
+                    <input type="radio" id="EA-122" name="equipamento" value="EA-122"><label for="EA-122">EA-122</label>
+                    <input type="radio" id="EH-02" name="equipamento" value="EH-02"><label for="EH-02">EH-02</label>
+                    <input type="radio" id="EH-03" name="equipamento" value="EH-03"><label for="EH-03">EH-03</label>
+                    <input type="radio" id="EH-1001" name="equipamento" value="EH-1001"><label for="EH-1001">EH-1001</label>
+                    <input type="radio" id="EH-1002" name="equipamento" value="EH-1002"><label for="EH-1002">EH-1002</label>
+                    <input type="radio" id="EH-112" name="equipamento" value="EH-112"><label for="EH-112">EH-112</label>
+                    <input type="radio" id="EH-114" name="equipamento" value="EH-114"><label for="EH-114">EH-114</label>
+                    <input type="radio" id="EH-115" name="equipamento" value="EH-115"><label for="EH-115">EH-115</label>
+                    <input type="radio" id="EH-117" name="equipamento" value="EH-117"><label for="EH-117">EH-117</label>
+                    <input type="radio" id="EH-118" name="equipamento" value="EH-118"><label for="EH-118">EH-118</label>
+                    <input type="radio" id="EH-119" name="equipamento" value="EH-119"><label for="EH-119">EH-119</label>
+                    <input type="radio" id="EH-120" name="equipamento" value="EH-120"><label for="EH-120">EH-120</label>
+                    <input type="radio" id="MN-71" name="equipamento" value="MN-71"><label for="MN-71">MN-71</label>
+                    <input type="radio" id="TE-02" name="equipamento" value="TE-02"><label for="TE-02">TE-02</label>
+                    <input type="radio" id="TE-1101" name="equipamento" value="TE-1101"><label for="TE-1101">TE-1101</label>
+                    <input type="radio" id="TE-1102" name="equipamento" value="TE-1102"><label for="TE-1102">TE-1102</label>
+                    <input type="radio" id="TE-132" name="equipamento" value="TE-132"><label for="TE-132">TE-132</label>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Problema</h2>
+                <div class="options">
+                    <input type="radio" id="problema1" name="problema" value="Travamento de camera"><label for="problema1">Travamento de camera</label>
+                    <input type="radio" id="problema2" name="problema" value="Perda de sinal"><label for="problema2">Perda de sinal</label>
+                    <input type="radio" id="problema3" name="problema" value="Desligamento"><label for="problema3">Desligamento</label>
+                    <input type="radio" id="problema4" name="problema" value="Pneu furado"><label for="problema4">Pneu furado</label>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const equipamento = document.querySelector('input[name="equipamento"]:checked');
+            const problema = document.querySelector('input[name="problema"]:checked');
+            if (!equipamento || !problema) {
+                alert('Selecione o equipamento e o problema.');
+                return;
+            }
+            const dataAtual = new Date();
+            const dados = {
+                equipamento: equipamento.value,
+                problema: problema.value,
+                data: dataAtual.toLocaleDateString(),
+                hora: dataAtual.toLocaleTimeString()
+            };
+            fetch('https://script.google.com/macros/s/SEU_SCRIPT_URL/exec', {
+                method: 'POST',
+                body: JSON.stringify(dados),
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(res => res.text())
+            .then(msg => alert("Registrado com sucesso!"))
+            .catch(err => {
+                alert("Erro ao registrar.");
+                console.error(err);
+            });
+        });
+    </script>
+</body>
+</html>
